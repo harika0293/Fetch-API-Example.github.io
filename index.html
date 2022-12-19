@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GET & DELETE API</title>
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Source+Serif+4:wght@400;600&family=Source+Serif+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Source+Serif+4:wght@400;600&family=Source+Serif+Pro&display=swap');
+      :root {
+        --primary-color: rgb(57, 89, 231);
+        --white-color: rgb(202, 173, 173);
+      }
+      body {
+        background: linear-gradient(to right, #c35b7e, #6a91ef);
+        font-family: 'Libre Baskerville', serif;
+      }
+      body {
+        text-align: center;
+        font-family: 'Libre Baskerville', serif;
+      }
+      #getBtn,
+      #ClearData {
+        margin: 15px;
+        padding: 15px;
+        background: var(--primary-color);
+        border: 5px solid var(--primary-color);
+        color: var(--white-color);
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-transform: uppercase;
+        transition: all ease-in-out 170ms;
+        font-family: 'Libre Baskerville', serif;
+      }
+      #getBtn:hover,
+      #ClearData:hover {
+        color: var(--primary-color);
+        background: var(--white-color);
+        font-family: 'Libre Baskerville', serif;
+      }
+      #content {
+        display: block;
+        border: 5px solid rgba(43, 43, 43, 0.453);
+        height: auto;
+        width: 26rem;
+        background: var(--white-color);
+        position: relative;
+        left: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transform: translateX(-50%);
+        height: 30rem;
+        overflow: scroll;
+        font-family: 'Libre Baskerville', serif;
+      }
+      #content div {
+        display: block;
+        height: auto;
+        border-bottom: 2px solid grey;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Libre Baskerville', serif;
+      }
+      .user {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-between;
+        padding: 10px;
+        border: none !important;
+        font-family: 'Libre Baskerville', serif;
+      }
+      .remove {
+        display: none !important;
+        font-family: 'Libre Baskerville', serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>FETCH API EXAMPLE</h1>
+    <button id="getBtn">Get Data</button>
+    <button id="ClearData">Delete Data</button>
+    <div id="content"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>
